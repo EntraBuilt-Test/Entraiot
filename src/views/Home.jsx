@@ -59,7 +59,7 @@ export default function Home() {
           <img 
             src="/laptop_image.png" 
             alt="Laptop and Mobile Dashboard" 
-            style={{ width: '100%', maxWidth: '450px', objectFit: 'contain' }} 
+            style={{ width: '100%', maxWidth: '450px', objectFit: 'contain', transform: 'translateX(30px)' }} 
           />
 
           <div className="hero-benefits" style={{ position: 'absolute', bottom: '8%', left: '12%' }}>
