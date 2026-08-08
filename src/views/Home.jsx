@@ -24,7 +24,7 @@ export default function Home() {
       <section className="hero-section">
         <div className="hero-left">
           <p className="hero-subtitle">SCAN. EXPLORE. INNOVATE.</p>
-          <h1 className="hero-title">Interactive<br/>Service Scanner</h1>
+          <h1 className="hero-title">Interactive<br/>Service</h1>
           <p className="hero-desc">All IT & IoT Solutions for<br/>Your Business Growth</p>
           
           <div className="hero-features">
