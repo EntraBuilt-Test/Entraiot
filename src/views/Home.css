@@ -33,11 +33,11 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
 
 /* Hero Section */
 .hero-section {
-  display: flex; justify-content: space-between; align-items: stretch;
+  display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center;
   padding: 40px 60px; background: linear-gradient(135deg, #ffffff 40%, #faede8 100%);
-  gap: 20px; min-height: 500px;
+  gap: 20px;
 }
-.hero-left { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.hero-left { width: 45%; display: flex; flex-direction: column; justify-content: center; order: 1; }
 .hero-subtitle { color: #e07a5f; font-weight: 700; font-size: 14px; letter-spacing: 1px; margin-bottom: 10px; }
 .hero-title { font-size: 42px; font-weight: 800; line-height: 1.2; color: #2b4168; margin-bottom: 10px; }
 .hero-desc { font-size: 18px; color: #2b4168; font-weight: 500; margin-bottom: 30px; }
@@ -45,8 +45,8 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
 .feature-item { display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; text-align: center; color: #2b4168; }
 .feature-icon { width: 48px; height: 48px; border-radius: 12px; background: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
 
-/* Hero Center (Phone Mockup) */
-.hero-center { flex: 1; display: flex; justify-content: center; position: relative; }
+/* Hero Center (Phone Mockup/Shield) */
+.hero-center { width: 100%; display: flex; justify-content: center; position: relative; order: 3; margin-top: 40px; }
 .phone-mockup { 
   background: white; width: 280px; border-radius: 36px; padding: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   border: 8px solid #2b4168; position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;
@@ -58,7 +58,7 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
 .or-text { font-size: 12px; color: #94a3b8; margin-bottom: 10px; }
 
 /* Hero Right (Laptop & Chatbot Mockup) */
-.hero-right { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px; position: relative; max-width: 450px; margin: 0 auto; }
+.hero-right { width: 45%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px; position: relative; max-width: 450px; margin: 0 auto; order: 2; }
 .laptop-mockup { width: 320px; position: relative; margin-bottom: -40px; }
 .laptop-screen { background: #2b4168; border-radius: 12px 12px 0 0; padding: 10px; height: 200px; display: flex; }
 .dashboard-placeholder { background: white; flex: 1; border-radius: 4px; display: flex; padding: 8px; gap: 8px; }
@@ -135,11 +135,11 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-  .hero-section { flex-direction: row; flex-wrap: wrap; align-items: flex-start; padding: 20px; gap: 20px; justify-content: space-between; }
-  .hero-center { order: 1; width: 100%; display: flex; justify-content: center; margin-bottom: 20px; }
-  .hero-left { order: 2; width: 45%; flex: none; text-align: left; }
-  .hero-right { order: 3; width: 45%; flex: none; }
-  .hero-features { justify-content: flex-start; }
+  .hero-section { padding: 20px; flex-direction: column; }
+  .hero-left { width: 100%; order: 1; text-align: center; }
+  .hero-right { width: 100%; order: 2; }
+  .hero-center { width: 100%; order: 3; }
+  .hero-features { justify-content: center; }
   .it-services-grid { flex-wrap: wrap; }
   .footer-main { flex-direction: column; align-items: center; }
 }
