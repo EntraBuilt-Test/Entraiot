@@ -62,7 +62,7 @@ export default function Home() {
             style={{ width: '100%', maxWidth: '450px', objectFit: 'contain' }} 
           />
 
-          <div className="hero-benefits" style={{ position: 'absolute', bottom: '15%', left: '12%' }}>
+          <div className="hero-benefits" style={{ position: 'absolute', bottom: '8%', left: '12%' }}>
             <ul>
               <li><CheckCircle2 size={16} color={navy}/> Smart Solutions</li>
               <li><CheckCircle2 size={16} color={navy}/> Custom Automation</li>
