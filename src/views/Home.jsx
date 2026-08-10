@@ -143,7 +143,7 @@ export default function Home() {
           >
             ← Back
           </button>
-          <video src="/IOT service.mp4" loop autoPlay style={{ maxWidth: '90%', maxHeight: '85vh', borderRadius: '16px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)', outline: 'none', border: '1px solid rgba(255,255,255,0.2)' }} />
+          <video src="/IOT service.mp4" loop autoPlay muted playsInline disablePictureInPicture style={{ maxWidth: '90%', maxHeight: '85vh', borderRadius: '16px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)', outline: 'none', border: '1px solid rgba(255,255,255,0.2)', pointerEvents: 'none' }} />
         </div>
       )}
     </div>
