@@ -50,10 +50,18 @@ export default function Home() {
         </div>
 
         <div className="hero-center" style={{ position: 'relative', maxWidth: '350px', margin: '0 auto' }}>
+          {!showButtons && (
+            <>
+              <div className="touch-pulse-ring"></div>
+              <div className="tap-hint">
+                <Hand size={14} style={{ marginRight: '4px' }}/> Tap to explore
+              </div>
+            </>
+          )}
           <img 
             src="/footer_illustration.png" 
             alt="Hero Illustration" 
-            style={{ width: '100%', maxWidth: '350px', objectFit: 'contain', mixBlendMode: 'multiply', cursor: 'pointer' }} 
+            style={{ width: '100%', maxWidth: '350px', objectFit: 'contain', mixBlendMode: 'multiply', cursor: 'pointer', position: 'relative', zIndex: 1 }} 
             onClick={() => setShowButtons(!showButtons)}
           />
           {showButtons && (
