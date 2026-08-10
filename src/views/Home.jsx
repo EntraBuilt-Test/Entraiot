@@ -129,21 +129,14 @@ export default function Home() {
       </footer>
 
       {activeVideo && (
-        <div style={{
-          position: 'fixed',
-          top: 0, left: 0, width: '100%', height: '100%',
-          backgroundColor: 'rgba(0,0,0,0.8)',
-          zIndex: 9999,
-          display: 'flex', flexDirection: 'column',
-          alignItems: 'center', justifyContent: 'center'
-        }}>
+        <div className="video-modal-overlay">
           <button 
-            style={{ position: 'absolute', top: '20px', left: '20px', background: 'rgba(255,255,255,0.2)', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '30px', fontSize: '16px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', backdropFilter: 'blur(4px)' }}
+            className="video-modal-close"
             onClick={() => setActiveVideo(null)}
           >
             ← Back
           </button>
-          <video src={activeVideo} loop autoPlay muted playsInline disablePictureInPicture style={{ maxWidth: '90%', maxHeight: '85vh', borderRadius: '16px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)', outline: 'none', border: '1px solid rgba(255,255,255,0.2)', pointerEvents: 'none' }} />
+          <video src={activeVideo} loop autoPlay muted playsInline disablePictureInPicture className="video-modal-player" />
         </div>
       )}
     </div>
