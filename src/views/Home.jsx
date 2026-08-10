@@ -9,7 +9,6 @@ import {
 import './Home.css';
 
 export default function Home() {
-  const [showButtons, setShowButtons] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null);
   const navy = "#2b4168";
   const orange = "#e07a5f";
@@ -51,27 +50,14 @@ export default function Home() {
 
         <div className="hero-right">
           <div style={{ position: 'relative', maxWidth: '350px', margin: '0 auto' }}>
-            {!showButtons && (
-              <>
-                <div className="touch-pulse-ring"></div>
-                <div className="tap-hint">
-                  <Hand size={14} style={{ marginRight: '4px' }}/> Tap to explore
-                </div>
-              </>
-            )}
             <img 
               src="/footer_illustration.png" 
               alt="Hero Illustration" 
-              style={{ width: '100%', maxWidth: '350px', objectFit: 'contain', mixBlendMode: 'multiply', cursor: 'pointer', position: 'relative', zIndex: 1 }} 
-              onClick={() => setShowButtons(!showButtons)}
+              style={{ width: '100%', maxWidth: '350px', objectFit: 'contain', mixBlendMode: 'multiply', position: 'relative', zIndex: 1 }} 
             />
-            {showButtons && (
-              <>
-                <button className="btn-dark hero-interactive-btn btn-top" onClick={() => setActiveVideo('/IT service (2).mp4')}>IT Service</button>
-                <button className="btn-dark hero-interactive-btn btn-right" onClick={() => setActiveVideo('/IOT service.mp4')}>IoT Service</button>
-                <button className="btn-dark hero-interactive-btn btn-left" onClick={() => setActiveVideo('/industry we serve.mp4')}>Industries We Serve</button>
-              </>
-            )}
+            <button className="btn-dark hero-interactive-btn btn-top" onClick={() => setActiveVideo('/IT service (2).mp4')}>IT Service</button>
+            <button className="btn-dark hero-interactive-btn btn-right" onClick={() => setActiveVideo('/IOT service.mp4')}>IoT Service</button>
+            <button className="btn-dark hero-interactive-btn btn-left" onClick={() => setActiveVideo('/industry we serve.mp4')}>Industries We Serve</button>
           </div>
         </div>
 
