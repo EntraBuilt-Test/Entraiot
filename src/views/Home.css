@@ -162,7 +162,7 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
   z-index: 10;
 }
 .btn-top {
-  top: 20px;
+  top: 60px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -206,7 +206,7 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
   
   /* Fix Hero Interactive Buttons Overflow */
   .hero-center { max-width: 250px !important; margin: 0 auto; }
-  .btn-top { top: 25px; font-size: 12px; padding: 6px 16px; }
+  .btn-top { top: 50px; font-size: 12px; padding: 6px 16px; }
   .btn-right { right: -15px; font-size: 12px; padding: 6px 16px; }
   .btn-left { left: -15px; font-size: 12px; padding: 6px 16px; }
   
