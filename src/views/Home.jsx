@@ -58,9 +58,9 @@ export default function Home() {
           />
           {showButtons && (
             <>
-              <button className="btn-dark" style={{ position: 'absolute', top: '-30px', left: '50%', transform: 'translate(-50%, -50%)', whiteSpace: 'nowrap', zIndex: 10 }}>IT Service</button>
-              <button className="btn-dark" style={{ position: 'absolute', top: '50%', right: '-40px', transform: 'translate(50%, -50%)', whiteSpace: 'nowrap', zIndex: 10 }} onClick={() => setShowVideo(true)}>IoT Service</button>
-              <button className="btn-dark" style={{ position: 'absolute', top: '50%', left: '-40px', transform: 'translate(-50%, -50%)', whiteSpace: 'nowrap', zIndex: 10 }}>Industries We Serve</button>
+              <button className="btn-dark hero-interactive-btn btn-top">IT Service</button>
+              <button className="btn-dark hero-interactive-btn btn-right" onClick={() => setShowVideo(true)}>IoT Service</button>
+              <button className="btn-dark hero-interactive-btn btn-left">Industries We Serve</button>
             </>
           )}
         </div>
