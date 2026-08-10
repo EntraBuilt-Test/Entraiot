@@ -49,31 +49,33 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-center" style={{ position: 'relative', maxWidth: '350px', margin: '0 auto' }}>
-          {!showButtons && (
-            <>
-              <div className="touch-pulse-ring"></div>
-              <div className="tap-hint">
-                <Hand size={14} style={{ marginRight: '4px' }}/> Tap to explore
-              </div>
-            </>
-          )}
-          <img 
-            src="/footer_illustration.png" 
-            alt="Hero Illustration" 
-            style={{ width: '100%', maxWidth: '350px', objectFit: 'contain', mixBlendMode: 'multiply', cursor: 'pointer', position: 'relative', zIndex: 1 }} 
-            onClick={() => setShowButtons(!showButtons)}
-          />
-          {showButtons && (
-            <>
-              <button className="btn-dark hero-interactive-btn btn-top" onClick={() => setActiveVideo('/IT service (2).mp4')}>IT Service</button>
-              <button className="btn-dark hero-interactive-btn btn-right" onClick={() => setActiveVideo('/IOT service.mp4')}>IoT Service</button>
-              <button className="btn-dark hero-interactive-btn btn-left" onClick={() => setActiveVideo('/industry we serve.mp4')}>Industries We Serve</button>
-            </>
-          )}
+        <div className="hero-right">
+          <div style={{ position: 'relative', maxWidth: '350px', margin: '0 auto' }}>
+            {!showButtons && (
+              <>
+                <div className="touch-pulse-ring"></div>
+                <div className="tap-hint">
+                  <Hand size={14} style={{ marginRight: '4px' }}/> Tap to explore
+                </div>
+              </>
+            )}
+            <img 
+              src="/footer_illustration.png" 
+              alt="Hero Illustration" 
+              style={{ width: '100%', maxWidth: '350px', objectFit: 'contain', mixBlendMode: 'multiply', cursor: 'pointer', position: 'relative', zIndex: 1 }} 
+              onClick={() => setShowButtons(!showButtons)}
+            />
+            {showButtons && (
+              <>
+                <button className="btn-dark hero-interactive-btn btn-top" onClick={() => setActiveVideo('/IT service (2).mp4')}>IT Service</button>
+                <button className="btn-dark hero-interactive-btn btn-right" onClick={() => setActiveVideo('/IOT service.mp4')}>IoT Service</button>
+                <button className="btn-dark hero-interactive-btn btn-left" onClick={() => setActiveVideo('/industry we serve.mp4')}>Industries We Serve</button>
+              </>
+            )}
+          </div>
         </div>
 
-        <div className="hero-right">
+        <div className="hero-center" style={{ position: 'relative', maxWidth: '450px', margin: '0 auto' }}>
           <img 
             src="/laptop_image.png" 
             alt="Laptop and Mobile Dashboard" 
