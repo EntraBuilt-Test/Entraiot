@@ -59,6 +59,7 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
 
 /* Hero Right (Laptop & Chatbot Mockup) */
 .hero-right { width: 45%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 20px; position: relative; max-width: 450px; margin: 0 auto; order: 2; }
+.laptop-hero-img { width: 100%; max-width: 450px; object-fit: contain; transform: translateX(30px); }
 .laptop-mockup { width: 320px; position: relative; margin-bottom: -40px; }
 .laptop-screen { background: #2b4168; border-radius: 12px 12px 0 0; padding: 10px; height: 200px; display: flex; }
 .dashboard-placeholder { background: white; flex: 1; border-radius: 4px; display: flex; padding: 8px; gap: 8px; }
@@ -85,6 +86,9 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
   margin-top: 10px; 
   padding-left: 20px; 
   color: #2b4168; 
+  position: absolute;
+  bottom: 8%;
+  left: 12%;
 }
 .hero-benefits li { color: #2b4168; font-weight: 600; font-size: 14px; margin-bottom: 8px; }
 
@@ -230,8 +234,12 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
   .cta-buttons button { width: 100%; }
   .benefits-grid { grid-template-columns: 1fr; justify-items: center; }
   
-  .laptop-mockup { width: 100%; max-width: 320px; }
+  .hero-right { width: 100%; align-items: center; order: 2; }
+  .laptop-mockup { width: 100%; margin-bottom: 20px; }
   .chatbot-mockup { right: 0; transform: translateX(20%); }
+  
+  .laptop-hero-img { transform: translateX(0); }
+  .hero-benefits { position: relative; bottom: auto; left: auto; margin-top: 0px; padding-left: 0; align-self: center; text-align: left; }
   
   /* Fix Hero Interactive Buttons Overflow */
   .hero-center { max-width: 220px !important; margin: 0 auto; }

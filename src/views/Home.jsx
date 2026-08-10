@@ -65,10 +65,10 @@ export default function Home() {
           <img 
             src="/laptop_image.png" 
             alt="Laptop and Mobile Dashboard" 
-            style={{ width: '100%', maxWidth: '450px', objectFit: 'contain', transform: 'translateX(30px)' }} 
+            className="laptop-hero-img"
           />
 
-          <div className="hero-benefits" style={{ position: 'absolute', bottom: '8%', left: '12%' }}>
+          <div className="hero-benefits">
             <ul>
               <li><CheckCircle2 size={16} color={navy}/> Smart Solutions</li>
               <li><CheckCircle2 size={16} color={navy}/> Custom Automation</li>
