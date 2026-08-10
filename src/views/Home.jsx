@@ -49,7 +49,7 @@ export default function Home() {
         </div>
 
         <div className="hero-right">
-          <div style={{ position: 'relative', maxWidth: '350px', margin: '0 auto' }}>
+          <div className="interactive-illustration" style={{ position: 'relative', maxWidth: '350px', margin: '0 auto' }}>
             <img 
               src="/footer_illustration.png" 
               alt="Hero Illustration" 

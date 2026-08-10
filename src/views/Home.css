@@ -242,7 +242,7 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
   .hero-benefits { position: relative; bottom: auto; left: auto; margin-top: 0px; padding-left: 0; align-self: center; text-align: left; }
   
   /* Fix Hero Interactive Buttons Overflow */
-  .hero-center { max-width: 220px !important; margin: 0 auto; }
+  .interactive-illustration { max-width: 220px !important; margin: 0 auto; }
   .btn-top { top: 40px; font-size: 11px; padding: 6px 12px; }
   .btn-right { right: 10px; font-size: 11px; padding: 6px 12px; }
   .btn-left { left: 20px; font-size: 11px; padding: 6px 12px; }
