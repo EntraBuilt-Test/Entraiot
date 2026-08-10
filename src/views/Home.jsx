@@ -138,12 +138,12 @@ export default function Home() {
           alignItems: 'center', justifyContent: 'center'
         }}>
           <button 
-            style={{ position: 'absolute', top: '20px', right: '20px', background: 'transparent', color: 'white', border: 'none', fontSize: '24px', cursor: 'pointer' }}
+            style={{ position: 'absolute', top: '20px', left: '20px', background: 'rgba(255,255,255,0.2)', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '30px', fontSize: '16px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', backdropFilter: 'blur(4px)' }}
             onClick={() => setShowVideo(false)}
           >
-            ✕
+            ← Back
           </button>
-          <video src="/IOT service.mp4" controls autoPlay style={{ maxWidth: '90%', maxHeight: '80%' }} />
+          <video src="/IOT service.mp4" loop autoPlay style={{ maxWidth: '90%', maxHeight: '85vh', borderRadius: '16px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)', outline: 'none', border: '1px solid rgba(255,255,255,0.2)' }} />
         </div>
       )}
     </div>
