@@ -10,7 +10,7 @@ import './Home.css';
 
 export default function Home() {
   const [showButtons, setShowButtons] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
+  const [activeVideo, setActiveVideo] = useState(null);
   const navy = "#2b4168";
   const orange = "#e07a5f";
 
@@ -58,9 +58,9 @@ export default function Home() {
           />
           {showButtons && (
             <>
-              <button className="btn-dark hero-interactive-btn btn-top">IT Service</button>
-              <button className="btn-dark hero-interactive-btn btn-right" onClick={() => setShowVideo(true)}>IoT Service</button>
-              <button className="btn-dark hero-interactive-btn btn-left">Industries We Serve</button>
+              <button className="btn-dark hero-interactive-btn btn-top" onClick={() => setActiveVideo('/IT service (2).mp4')}>IT Service</button>
+              <button className="btn-dark hero-interactive-btn btn-right" onClick={() => setActiveVideo('/IOT service.mp4')}>IoT Service</button>
+              <button className="btn-dark hero-interactive-btn btn-left" onClick={() => setActiveVideo('/industry we serve.mp4')}>Industries We Serve</button>
             </>
           )}
         </div>
@@ -128,7 +128,7 @@ export default function Home() {
         </div>
       </footer>
 
-      {showVideo && (
+      {activeVideo && (
         <div style={{
           position: 'fixed',
           top: 0, left: 0, width: '100%', height: '100%',
@@ -139,11 +139,11 @@ export default function Home() {
         }}>
           <button 
             style={{ position: 'absolute', top: '20px', left: '20px', background: 'rgba(255,255,255,0.2)', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '30px', fontSize: '16px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', backdropFilter: 'blur(4px)' }}
-            onClick={() => setShowVideo(false)}
+            onClick={() => setActiveVideo(null)}
           >
             ← Back
           </button>
-          <video src="/IOT service.mp4" loop autoPlay muted playsInline disablePictureInPicture style={{ maxWidth: '90%', maxHeight: '85vh', borderRadius: '16px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)', outline: 'none', border: '1px solid rgba(255,255,255,0.2)', pointerEvents: 'none' }} />
+          <video src={activeVideo} loop autoPlay muted playsInline disablePictureInPicture style={{ maxWidth: '90%', maxHeight: '85vh', borderRadius: '16px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)', outline: 'none', border: '1px solid rgba(255,255,255,0.2)', pointerEvents: 'none' }} />
         </div>
       )}
     </div>
