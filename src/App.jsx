@@ -17,8 +17,8 @@ function App() {
 
   if (showSplash) {
     return (
-      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: '#fff', zIndex: 99999 }}>
-        <img src="/poster.jpeg" alt="Splash Poster" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: '#fff', zIndex: 99999, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src="/poster.jpeg" alt="Splash Poster" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
       </div>
     );
   }
