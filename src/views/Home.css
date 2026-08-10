@@ -234,10 +234,10 @@ li { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4755
   .chatbot-mockup { right: 0; transform: translateX(20%); }
   
   /* Fix Hero Interactive Buttons Overflow */
-  .hero-center { max-width: 250px !important; margin: 0 auto; }
-  .btn-top { top: 50px; font-size: 12px; padding: 6px 16px; }
-  .btn-right { right: -15px; font-size: 12px; padding: 6px 16px; }
-  .btn-left { left: -15px; font-size: 12px; padding: 6px 16px; }
+  .hero-center { max-width: 220px !important; margin: 0 auto; }
+  .btn-top { top: 40px; font-size: 11px; padding: 6px 12px; }
+  .btn-right { right: 10px; font-size: 11px; padding: 6px 12px; }
+  .btn-left { left: 20px; font-size: 11px; padding: 6px 12px; }
   
   /* Fullscreen Video on Mobile */
   .video-modal-overlay { background-color: #000; }
